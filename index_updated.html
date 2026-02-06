@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FC Shards Calculator</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>FC Shards Calculator</h1>
+</header>
+
+    <main>
+      <div class="card">
+        <div class="toolbar">
+          <button id="resetBtn" type="button">Reset</button>
+        </div>
+
+        <div class="table-wrap">
+          <table id="calcTable" aria-label="FC Shards Calculator Tabelle">
+            <thead>
+              <tr>
+                <th>Skill</th>
+                <th>From (0–12)</th>
+                <th>To (0–12)</th>
+                <th class="right">Costs FC Shards</th>
+                <th class="right">Costs Iron</th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3" class="total-label">TOTAL</td>
+                <td id="totalFc" class="right total-value">0</td>
+                <td id="totalIron" class="right total-value">0</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+</div>
+    </main>
+</div>
+
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
